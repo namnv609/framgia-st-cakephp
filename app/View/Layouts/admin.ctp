@@ -25,10 +25,10 @@
         ?>
         <script type="text/javascript">
             $(function() {
-                $(".box .h_title").not(this).next("ul").hide("normal");
+                //$(".box .h_title").not(this).next("ul").hide("normal");
                 $(".box .h_title").not(this).next("#home").show("normal");
                 $(".box").children(".h_title").click(function() {
-                    $(".box ul").hide("normal");
+                    //$(".box ul").hide("normal");
                     $(this).next("ul").slideToggle();
                 });
             });
@@ -97,10 +97,10 @@
                     <div class="box">
                         <div class="h_title">&#8250; Manage content</div>
                         <ul>
-                            <li class="b1"><a class="icon page" href="">Show all pages</a></li>
-                            <li class="b2"><a class="icon add_page" href="">Add new page</a></li>
-                            <li class="b1"><a class="icon photo" href="">Add new gallery</a></li>
-                            <li class="b2"><a class="icon category" href="">Categories</a></li>
+                            <li class="b1"><a class="icon page" href="<?php echo SITE_DIR . ADMIN_ALIAS . '/categories'; ?>">Show all Categories</a></li>
+                            <li class="b2"><a class="icon add_page" href="<?php echo SITE_DIR . ADMIN_ALIAS . '/add-category'; ?>">Add new Category</a></li>
+                            <li class="b1"><a class="icon photo" href="">Show all News</a></li>
+                            <li class="b2"><a class="icon category" href="">Add new News</a></li>
                         </ul>
                     </div>
                     <div class="box">

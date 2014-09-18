@@ -3,10 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/var/www/firstapp/app/webroot/js/admin/script.js</file>
             <file>file:/var/www/firstapp/app/Config/routes.php</file>
-            <file>file:/var/www/firstapp/app/View/Configs/admin_index.ctp</file>
-            <file>file:/var/www/firstapp/app/Model/Config.php</file>
-            <file>file:/var/www/firstapp/app/Controller/ConfigsController.php</file>
+            <file>file:/var/www/firstapp/app/Controller/CategoriesController.php</file>
+            <file>file:/var/www/firstapp/app/View/Categories/admin_index.ctp</file>
+            <file>file:/var/www/firstapp/app/Model/Category.php</file>
         </group>
     </open-files>
 </project-private>

@@ -50,56 +50,95 @@
  * Route for list news of categories
  */
         Router::connect(
-                    '/:cateName-:cateID',
-                    array(
-                        'controller' => 'news',
-                        'action'    => 'index',
-                        'cateID'    => 0
-                    ),
-                    array(
-                        'cateName' => '[-a-z0-9]+',
-                        'cateID' => '[0-9]+',
-                        'pass'  => array('cateID')
-                    )
-                );
+            '/:cateName-:cateID',
+            array(
+                'controller' => 'news',
+                'action'    => 'index',
+                'cateID'    => 0
+            ),
+            array(
+                'cateName' => '[-a-z0-9]+',
+                'cateID' => '[0-9]+',
+                'pass'  => array('cateID')
+            )
+        );
         
 /**
  * Routing for back-end
  */
         Router::connect(ADMIN_ALIAS,
-                array(
-                    'controller' => 'homes',
-                    'action' => 'index',
-                    'admin' => TRUE
-                )
+            array(
+                'controller' => 'homes',
+                'action' => 'index',
+                'admin' => TRUE
+            )
         );
         Router::connect(ADMIN_ALIAS . '/login',
-                array(
-                    'controller' => 'homes',
-                    'action' => 'login',
-                    'admin' => TRUE
-                )
+            array(
+                'controller' => 'homes',
+                'action' => 'login',
+                'admin' => TRUE
+            )
         );
         Router::connect(ADMIN_ALIAS . '/logout',
-                array(
-                    'controller' => 'homes',
-                    'action'    => 'logout',
-                    'admin' => TRUE
-                )
+            array(
+                'controller' => 'homes',
+                'action'    => 'logout',
+                'admin' => TRUE
+            )
         );
         Router::connect(ADMIN_ALIAS . '/website-configuration',
-                array(
-                    'controller' => 'configs',
-                    'action' => 'index',
-                    'admin' => TRUE
-                )
+            array(
+                'controller' => 'configs',
+                'action' => 'index',
+                'admin' => TRUE
+            )
         );
         Router::connect(ADMIN_ALIAS . '/website-configuration/update',
-                array(
-                    'controller' => 'configs',
-                    'action' => 'update',
-                    'admin' => TRUE
-                )
+            array(
+                'controller' => 'configs',
+                'action' => 'update',
+                'admin' => TRUE
+            )
+        );
+        
+        Router::connect(ADMIN_ALIAS . '/categories',
+            array(
+                'controller' => 'categories',
+                'action'    => 'index',
+                'admin' => TRUE
+            )
+        );
+        Router::connect(ADMIN_ALIAS . '/add-category:cateID',
+            array(
+                'controller' => 'categories',
+                'action' => 'edit',
+                'admin' => TRUE,
+                'cateID' => 0
+            ),
+            array(
+                'pass' => array('cateID'),
+                'cateID' => '[0-9]+'
+            )
+        );
+        Router::connect(ADMIN_ALIAS . '/edit-category-:cateID',
+            array(
+                'controller' => 'categories',
+                'action' => 'edit',
+                'admin' => TRUE,
+                'cateID' => 0
+            ),
+            array(
+                'pass' => array('cateID'),
+                'cateID' => '[0-9]+'
+            )
+        );
+        Router::connect(ADMIN_ALIAS . '/category/save',
+            array(
+                'controller' => 'categories',
+                'action' => 'update',
+                'admin' => TRUE
+            )
         );
 /**
  * Load all plugin routes. See the CakePlugin documentation on
