@@ -68,7 +68,7 @@
                         <div id="site-title">
                             <h2>
                                 <a href="<?php echo SITE_URL; ?>">
-                                    <?php echo $__globalSiteConfigs['siteName']; ?>
+                                    <img src="<?php echo IMG_RESIZER . $__globalSiteConfigs["siteLogo"]; ?>&amp;w=134&amp;h=40" alt="<?php echo $__globalSiteConfigs["siteName"] . ' - ' . $__globalSiteConfigs["siteSlogan"]; ?>" />
                                 </a>
                             </h2>
                             <p id="tagline"><?php echo $__globalSiteConfigs['siteSlogan']; ?></p>
