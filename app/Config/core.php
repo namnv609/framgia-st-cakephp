@@ -388,6 +388,9 @@ Cache::config('_cake_model_', array(
 /*
  * Custom define
  */
+Configure::write('Routing.prefixes', array('admin'));
+
 define('SITE_URL', 'http://localhost/firstapp');
 define('SITE_DIR', '/firstapp/');
 define('IMG_RESIZER', SITE_URL . '/timthumb.php?src=');
+define('ADMIN_ALIAS', '/admincp');

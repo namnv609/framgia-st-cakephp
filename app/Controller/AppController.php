@@ -35,26 +35,48 @@ class AppController extends Controller {
     
     public function beforeFilter() {
         //parent::beforeRender();
-        $this->loadModel('Layout');
+        $excludeFunctions = array('admin_login', 'admin_logout');
         
-        $__listCategories = $this->Layout->getAllCategories();
-        $__listSiteConfigs = $this->Layout->gellAllWebConfigs();
-        $__listFeaturedNews = $this->Layout->getFeaturedNews();
-        
-        $_listConfigs = array();
-        foreach($__listSiteConfigs as $__config){
-            $_listConfigs[$__config['Layout']['configName']] = $__config['Layout']['configValue'];
+        if($this->params['prefix'] == 'admin' && isset($this->params['prefix'])){
+            if($this->__adminAuth() == TRUE){
+                $this->layout = "admin";
+            }else{
+                if(!in_array($this->action, $excludeFunctions)){
+                    $this->redirect(SITE_URL . ADMIN_ALIAS . '/login');
+                }
+            }
+        }else{
+            $this->loadModel('Layout');
+
+            $__listCategories = $this->Layout->getAllCategories();
+            $__listSiteConfigs = $this->Layout->gellAllWebConfigs();
+            $__listFeaturedNews = $this->Layout->getFeaturedNews();
+
+            $_listConfigs = array();
+            foreach($__listSiteConfigs as $__config){
+                $_listConfigs[$__config['Layout']['configName']] = $__config['Layout']['configValue'];
+            }
+
+            $this->set("__listCategories", $__listCategories);
+            $this->set('__globalSiteConfigs', $_listConfigs);
+            $this->set('__globalFeaturedNews', $__listFeaturedNews);
+            $this->__staticSiteConfigs = $_listConfigs; 
         }
-        //$__listNewsIDs = unserialize($_listConfigs['siteSlide']);
+    }
+    
+    /**
+     * Check admin authentication
+     * 
+     * @return boolean Is auth or unauth
+     */
+    private function __adminAuth(){
+        $session = $this->Session->read('AdminSess');
         
-        $this->set("__listCategories", $__listCategories);
-        $this->set('__globalSiteConfigs', $_listConfigs);
-        $this->set('__globalFeaturedNews', $__listFeaturedNews);
-        $this->__staticSiteConfigs = $_listConfigs; 
+        if(isset($session) || $session['isLogin'] == TRUE){
+            //$this->redirect(SITE_URL . ADMIN_ALIAS . '/login');
+            return TRUE;
+        }
         
-        
-        //$this->set('__homeSlide', $this->Layout->getNewsSlide($__listNewsIDs));
-        
-        //pr($this->Layout->getNewsSlide($__listNewsIDs));
+        return FALSE;
     }
 }

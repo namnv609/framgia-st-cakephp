@@ -14334,3 +14334,2887 @@ Stack Trace:
 #1 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest))
 #2 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-09-16 09:19:04 Error: [MissingControllerException] Controller class Favicon.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 09:19:08 Error: [MissingControllerException] Controller class MusicController could not be found.
+Exception Attributes: array (
+  'class' => 'MusicController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/music/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 09:19:12 Error: [MissingControllerException] Controller class CultureController could not be found.
+Exception Attributes: array (
+  'class' => 'CultureController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/culture/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 13:22:27 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 13:46:15 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 13:48:33 Error: [PrivateActionException] Private Action HomesController::admin_index() is not directly accessible.
+Exception Attributes: array (
+  'controller' => 'HomesController',
+  'action' => 'admin_index',
+)
+Request URL: /firstapp/homes/admin_index
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#2 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 13:48:33 Error: [MissingActionException] Action HomesController::favicon.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomesController',
+  'action' => 'favicon.html',
+)
+Request URL: /firstapp/homes/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#2 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 13:48:34 Error: [MissingActionException] Action HomesController::favicon.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'HomesController',
+  'action' => 'favicon.html',
+)
+Request URL: /firstapp/homes/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#2 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 13:52:59 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Homes/admin_index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Homes/admin_index.ctp',
+)
+Request URL: /firstapp/admincp
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 13:53:41 Error: [MissingLayoutException] Layout file "/var/www/firstapp/app/View/Layouts/admin.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Layouts/admin.ctp',
+)
+Request URL: /firstapp/admincp
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(510): View->_getLayoutFileName('admin')
+#1 /var/www/firstapp/lib/Cake/View/View.php(479): View->renderLayout('', 'admin')
+#2 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#4 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#5 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-09-16 13:56:20 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/admin/style.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 13:56:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/admin/style.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 13:56:48 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/admin/style.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:21 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:21 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:22 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:22 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:23 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_view_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_report.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_config.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_category.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_photo.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:40 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_block_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_user.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_contact.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_error.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_warning.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_delete.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_archive.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_edit.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:04:41 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_view_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_report.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:24 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_photo.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_config.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_user.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_category.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_block_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_warning.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_contact.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_error.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_delete.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_edit.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:05:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_archive.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_view_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_config.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_report.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_photo.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_category.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_block_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_user.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_contact.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_error.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_warning.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_delete.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_edit.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:16 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_archive.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_view_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_report.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:06:59 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_config.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_category.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_photo.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add_user.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_contact.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_block_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_warning.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_error.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_add.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_delete.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_archive.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_edit.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_view_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_config.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_add_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_report.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_photo.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_category.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_block_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_add_user.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_contact.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_error.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_warning.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_delete.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_add.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_edit.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:07:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_archive.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_view_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_report.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_config.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_photo.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_category.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:51 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_add_page.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_add_user.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_block_users.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_contact.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_warning.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_error.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_add.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_delete.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/bg_box_head.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_edit.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:08:52 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/admin/i_archive.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:09:25 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/navi.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:09:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/jquery-1.7.2.min.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:09:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:09:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:09:25 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:10:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:10:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:10:45 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:03 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:04 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts_init.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:11:06 Error: [MissingControllerException] Controller class JsController could not be found.
+Exception Attributes: array (
+  'class' => 'JsController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/js/highcharts.js
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:17:41 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/css/login.css
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:18:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_login_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:18:12 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:18:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/bg_login_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:18:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/css/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:18:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/img/bg_login_top.jpg
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:18:56 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:19:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/img/i_ok.png
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:34:26 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 14:34:35 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:10:01 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Homes/admin_dologin.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Homes/admin_dologin.ctp',
+)
+Request URL: /firstapp/admincp/do-login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:10:02 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:10:18 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Homes/admin_dologin.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Homes/admin_dologin.ctp',
+)
+Request URL: /firstapp/admincp/do-login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:20:55 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:55 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:55 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:55 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:20:56 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:21:21 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:21:26 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:21:36 Error: [MissingControllerException] Controller class LoginController could not be found.
+Exception Attributes: array (
+  'class' => 'LoginController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:22:05 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Login/admin_index.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Login/admin_index.ctp',
+)
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-16 15:23:02 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 15:38:52 Error: [MissingTableException] Table tbl_logins for model Login was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'tbl_logins',
+  'class' => 'Login',
+  'ds' => 'default',
+)
+Request URL: /firstapp//admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Model.php(3551): Model->setSource('logins')
+#1 /var/www/firstapp/lib/Cake/Model/Model.php(1369): Model->getDataSource()
+#2 /var/www/firstapp/lib/Cake/Model/Model.php(1234): Model->schema()
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(1193): Model->_setAliasData(Array)
+#4 /var/www/firstapp/app/Controller/HomesController.php(29): Model->set(Array)
+#5 [internal function]: HomesController->admin_login()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomesController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-16 15:40:10 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/firstapp/app/Controller/HomesController.php, line 31]
+2014-09-16 15:40:10 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /firstapp//admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:40:58 Error: [MissingActionException] Action AppController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'index',
+)
+Request URL: /firstapp/app/
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 15:40:58 Error: [MissingActionException] Action AppController::favicon.html() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'favicon.html',
+)
+Request URL: /firstapp/app/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-09-16 15:41:19 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/firstapp/app/Controller/HomesController.php, line 31]
+2014-09-16 15:41:19 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:42:21 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/firstapp/app/Controller/HomesController.php, line 32]
+2014-09-16 15:42:21 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 32, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 32, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:42:44 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/firstapp/app/Controller/HomesController.php, line 32]
+2014-09-16 15:42:44 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 32, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 32, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:43:40 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/firstapp/app/Controller/HomesController.php, line 31]
+2014-09-16 15:43:40 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:44:41 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/firstapp/app/Controller/HomesController.php, line 31]
+2014-09-16 15:44:41 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 15:45:09 Error: Fatal Error (1): Call to a member function validates() on a non-object in [/var/www/firstapp/app/Controller/HomesController.php, line 31]
+2014-09-16 15:45:09 Error: [FatalErrorException] Call to a member function validates() on a non-object
+Request URL: /firstapp/admincp/login
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 31)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 31, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-16 16:08:57 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/logout
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 16:18:14 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/logout
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-16 16:18:24 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/admincp/
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-17 08:12:29 Error: [MissingControllerException] Controller class Favicon.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-17 10:37:25 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getWebsiteConfig' at line 1
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getWebsiteConfi...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getWebsiteConfi...', Array, Array)
+#3 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getWebsiteConfi...', Array, Array)
+#4 /var/www/firstapp/lib/Cake/Model/Model.php(808): DboSource->query('getWebsiteConfi...', Array, Object(Config))
+#5 /var/www/firstapp/app/Controller/ConfigsController.php(5): Model->__call('getWebsiteConfi...', Array)
+#6 /var/www/firstapp/app/Controller/ConfigsController.php(5): Config->getWebsiteConfig()
+#7 [internal function]: ConfigsController->admin_index()
+#8 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#9 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#11 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:37:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'getWebsiteConfig' at line 1
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('getWebsiteConfi...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('getWebsiteConfi...', Array, Array)
+#3 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('getWebsiteConfi...', Array, Array)
+#4 /var/www/firstapp/lib/Cake/Model/Model.php(808): DboSource->query('getWebsiteConfi...', Array, Object(Config))
+#5 /var/www/firstapp/app/Controller/ConfigsController.php(5): Model->__call('getWebsiteConfi...', Array)
+#6 /var/www/firstapp/app/Controller/ConfigsController.php(5): Config->getWebsiteConfig()
+#7 [internal function]: ConfigsController->admin_index()
+#8 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#9 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#11 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-17 10:38:22 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/firstapp/app/Model/Config.php, line 23]
+2014-09-17 10:38:22 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 23, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 23, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 11:05:42 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/n/a
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-17 11:35:47 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/firstapp/app/Controller/ConfigsController.php, line 13]
+2014-09-17 11:35:47 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 13)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 13, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 13, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 13:50:58 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Configs/admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Configs/admin_update.ctp',
+)
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-17 13:51:32 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/website-configuration/%3Cpre%20class=
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-17 13:53:15 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Configs/admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Configs/admin_update.ctp',
+)
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-17 14:01:11 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Configs/admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Configs/admin_update.ctp',
+)
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-17 14:04:15 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Core/Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 /var/www/firstapp/app/Controller/ConfigsController.php(47): Object->requestAction('/firstapp//admi...')
+#2 [internal function]: ConfigsController->admin_update()
+#3 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#4 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#6 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-09-17 14:04:33 Error: [MissingControllerException] Controller class Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Controller',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Core/Object.php(106): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse), Array)
+#1 /var/www/firstapp/app/Controller/ConfigsController.php(47): Object->requestAction('/firstapp//admi...')
+#2 [internal function]: ConfigsController->admin_update()
+#3 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#4 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#5 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#6 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2014-09-17 14:04:44 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Configs/admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Configs/admin_update.ctp',
+)
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-17 14:05:59 Error: [MissingViewException] View file "/var/www/firstapp/app/View/Configs/admin_update.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/var/www/firstapp/app/View/Configs/admin_update.ctp',
+)
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /var/www/firstapp/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#4 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2014-09-17 14:25:14 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/var/www/firstapp/app/Controller/ConfigsController.php, line 6]
+2014-09-17 14:25:14 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/firsta...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/firsta...', 6, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/firsta...', 6, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 14:25:23 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/var/www/firstapp/app/Controller/ConfigsController.php, line 6]
+2014-09-17 14:25:23 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/firsta...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/firsta...', 6, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/firsta...', 6, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 14:25:44 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/var/www/firstapp/app/Controller/ConfigsController.php, line 7]
+2014-09-17 14:25:44 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/firsta...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/firsta...', 7, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/firsta...', 7, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 14:28:31 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/var/www/firstapp/app/Controller/ConfigsController.php, line 7]
+2014-09-17 14:28:31 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/firsta...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/firsta...', 7, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/firsta...', 7, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 14:36:16 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/var/www/firstapp/app/Controller/ConfigsController.php, line 14]
+2014-09-17 14:36:16 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/firsta...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/firsta...', 14, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/firsta...', 14, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 14:36:25 Error: Fatal Error (1): Call to undefined method SessionComponent::flash() in [/var/www/firstapp/app/Controller/ConfigsController.php, line 14]
+2014-09-17 14:36:25 Error: [FatalErrorException] Call to undefined method SessionComponent::flash()
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/firsta...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/firsta...', 14, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/firsta...', 14, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 14:48:30 Error: Fatal Error (4): syntax error, unexpected '}', expecting ',' or ';' in [/var/www/firstapp/app/View/Configs/admin_index.ctp, line 8]
+2014-09-17 14:48:30 Error: [FatalErrorException] syntax error, unexpected '}', expecting ',' or ';'
+Request URL: /firstapp//admincp/website-configuration
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/firsta...', 8)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/firsta...', 8, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/firsta...', 8, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-17 15:46:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Config.Config' in 'field list'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE `firstap...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/Database/Mysql.php(414): DboSource->execute('UPDATE `firstap...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(2585): Mysql->update(Object(Config), Array, NULL, true)
+#4 /var/www/firstapp/app/Model/Config.php(49): Model->updateAll(Array)
+#5 /var/www/firstapp/app/Controller/ConfigsController.php(74): Config->updateConfig(Array)
+#6 [internal function]: ConfigsController->admin_update()
+#7 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#9 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#10 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2014-09-17 16:21:35 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `fi...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `fi...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Config), Array, Array)
+#4 /var/www/firstapp/app/Controller/ConfigsController.php(74): Model->save(Array)
+#5 [internal function]: ConfigsController->admin_update()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-17 16:26:11 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `fi...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `fi...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Config), Array, Array)
+#4 /var/www/firstapp/app/Controller/ConfigsController.php(75): Model->save()
+#5 [internal function]: ConfigsController->admin_update()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-17 16:26:34 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `fi...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `fi...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Config), Array, Array)
+#4 /var/www/firstapp/app/Controller/ConfigsController.php(76): Model->save()
+#5 [internal function]: ConfigsController->admin_update()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-17 16:26:38 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `fi...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `fi...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(1854): DboSource->create(Object(Config), Array, Array)
+#4 /var/www/firstapp/app/Controller/ConfigsController.php(76): Model->save()
+#5 [internal function]: ConfigsController->admin_update()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-17 16:32:52 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Config.id' in 'where clause'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT COUNT(*)...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT COUNT(*)...', Array, Array)
+#3 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT COUNT(*)...', false)
+#4 /var/www/firstapp/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Config), Array)
+#5 /var/www/firstapp/lib/Cake/Model/Model.php(2919): Model->_readDataSource('count', Array)
+#6 /var/www/firstapp/lib/Cake/Model/Model.php(2829): Model->find('count', Array)
+#7 /var/www/firstapp/lib/Cake/Model/Model.php(1747): Model->exists()
+#8 /var/www/firstapp/lib/Cake/Model/Model.php(1681): Model->save(Array, Array)
+#9 /var/www/firstapp/app/Controller/ConfigsController.php(75): Model->saveField('configValue', '4444Framgia')
+#10 [internal function]: ConfigsController->admin_update()
+#11 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#12 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#14 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-09-17 16:33:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Config.id' in 'where clause'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Config`...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Config`...', Array, Array)
+#3 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Config`...', false)
+#4 /var/www/firstapp/lib/Cake/Model/Model.php(2947): DboSource->read(Object(Config), Array)
+#5 /var/www/firstapp/lib/Cake/Model/Model.php(2919): Model->_readDataSource('first', Array)
+#6 /var/www/firstapp/lib/Cake/Model/Model.php(1608): Model->find('first', Array)
+#7 /var/www/firstapp/app/Controller/ConfigsController.php(73): Model->read(NULL, 1)
+#8 [internal function]: ConfigsController->admin_update()
+#9 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#10 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#12 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-09-17 16:44:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Framgiarrrr' in 'field list'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE `firstap...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/Database/Mysql.php(414): DboSource->execute('UPDATE `firstap...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(2585): Mysql->update(Object(Config), Array, NULL, Array)
+#4 /var/www/firstapp/app/Controller/ConfigsController.php(78): Model->updateAll(Array, Array)
+#5 [internal function]: ConfigsController->admin_update()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-17 16:44:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Framgiarrrr' in 'field list'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE `firstap...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/Database/Mysql.php(414): DboSource->execute('UPDATE `firstap...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(2585): Mysql->update(Object(Config), Array, NULL, Array)
+#4 /var/www/firstapp/app/Controller/ConfigsController.php(78): Model->updateAll(Array, Array)
+#5 [internal function]: ConfigsController->admin_update()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-17 16:46:09 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [/var/www/firstapp/app/Controller/ConfigsController.php, line 75]
+2014-09-17 16:46:09 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/firsta...', 75)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/firsta...', 75, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/firsta...', 75, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-18 08:19:05 Error: [MissingControllerException] Controller class Favicon.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-18 08:19:06 Error: [MissingControllerException] Controller class Favicon.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-18 08:45:50 Error: Fatal Error (1): Call to a member function getLastQuery() on a non-object in [/var/www/firstapp/app/Model/Config.php, line 52]
+2014-09-18 08:45:50 Error: [FatalErrorException] Call to a member function getLastQuery() on a non-object
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/firsta...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/firsta...', 52, Array)
+#2 /var/www/firstapp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/firsta...', 52, Array)
+#3 /var/www/firstapp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-09-18 08:56:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE `firstap...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/Database/Mysql.php(414): DboSource->execute('UPDATE `firstap...')
+#3 /var/www/firstapp/lib/Cake/Model/Model.php(2585): Mysql->update(Object(Config), Array, NULL, Array)
+#4 /var/www/firstapp/app/Controller/ConfigsController.php(84): Model->updateAll(Array, Array)
+#5 [internal function]: ConfigsController->admin_update()
+#6 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#7 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#9 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-09-18 09:03:37 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 THEN Framgia123WHEN 2 THEN From ASIA To The WorldWHEN 3 THEN a:1:{i:0;s:1:"4";' at line 1
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE configs ...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('UPDATE configs ...', Array, Array)
+#3 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(537): DboSource->fetchAll('UPDATE configs ...')
+#4 [internal function]: DboSource->query('UPDATE configs ...')
+#5 /var/www/firstapp/lib/Cake/Model/Model.php(3354): call_user_func_array(Array, Array)
+#6 /var/www/firstapp/app/Controller/ConfigsController.php(48): Model->query('UPDATE configs ...')
+#7 [internal function]: ConfigsController->admin_update()
+#8 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#9 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#11 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-18 09:04:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '2 THEN From ASIA To The WorldWHEN 3 THEN a:2:{i:0;s:1:"3";i:1;s:1:"2";} WHEN 4 T' at line 1
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE configs ...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('UPDATE configs ...', Array, Array)
+#3 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(537): DboSource->fetchAll('UPDATE configs ...')
+#4 [internal function]: DboSource->query('UPDATE configs ...')
+#5 /var/www/firstapp/lib/Cake/Model/Model.php(3354): call_user_func_array(Array, Array)
+#6 /var/www/firstapp/app/Controller/ConfigsController.php(48): Model->query('UPDATE configs ...')
+#7 [internal function]: ConfigsController->admin_update()
+#8 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#9 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#11 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-09-18 09:05:24 Error: [PDOException] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'firstapp.configs' doesn't exist
+Request URL: /firstapp//admincp/website-configuration/update
+Stack Trace:
+#0 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('UPDATE configs ...', Array)
+#2 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('UPDATE configs ...', Array, Array)
+#3 /var/www/firstapp/lib/Cake/Model/Datasource/DboSource.php(537): DboSource->fetchAll('UPDATE configs ...')
+#4 [internal function]: DboSource->query('UPDATE configs ...')
+#5 /var/www/firstapp/lib/Cake/Model/Model.php(3354): call_user_func_array(Array, Array)
+#6 /var/www/firstapp/app/Controller/ConfigsController.php(48): Model->query('UPDATE configs ...')
+#7 [internal function]: ConfigsController->admin_update()
+#8 /var/www/firstapp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ConfigsController), Array)
+#9 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ConfigsController), Object(CakeRequest))
+#11 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}

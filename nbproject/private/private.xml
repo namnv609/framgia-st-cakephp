@@ -3,7 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/firstapp/app/.htaccess</file>
+            <file>file:/var/www/firstapp/app/Config/routes.php</file>
+            <file>file:/var/www/firstapp/app/View/Configs/admin_index.ctp</file>
+            <file>file:/var/www/firstapp/app/Model/Config.php</file>
+            <file>file:/var/www/firstapp/app/Controller/ConfigsController.php</file>
         </group>
     </open-files>
 </project-private>

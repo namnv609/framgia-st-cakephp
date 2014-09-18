@@ -17,5 +17,45 @@ class My_Lib{
         
         return $_prefix . Inflector::slug(strtolower($str), '-') . $suffix;
     }
+    
+    /**
+     * Tạo thông báo lỗi ở form
+     * 
+     * @param mixed $validationErrs Mảng lỗi
+     * @return string HTML thông báo lỗi
+     */
+    public static function formErrorSummary($validationErrs = NULL){
+        $html = "";
+        
+        if(is_array($validationErrs) && !empty($validationErrs)){
+            $_validationErrs = Set::flatten($validationErrs);
+            $html .= '<div class="n_error">';
+            
+            foreach($_validationErrs as $err){
+                $html .= "<p>$err</p>";
+            }
+            
+            $html .= '</div>';
+        }
+        
+        return $html;
+    }
+    
+    /**
+     * Tạo thông báo thành công cho form
+     * 
+     * @param string $message Nội dung thông b
+     * @param type $class Class của thẻ sẽ chứa thông báo
+     * @return string HTML thông báo
+     */
+    public static function formSuccessSummary($message, $class = "n_ok"){
+        $html = "";
+        
+        if($message && !empty($message)){
+            $html .= "<div class='$class'><p>$message</p></div>";
+        }
+        
+        return $html;
+    }
 }
 

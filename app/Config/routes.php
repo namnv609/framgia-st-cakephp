@@ -62,6 +62,45 @@
                         'pass'  => array('cateID')
                     )
                 );
+        
+/**
+ * Routing for back-end
+ */
+        Router::connect(ADMIN_ALIAS,
+                array(
+                    'controller' => 'homes',
+                    'action' => 'index',
+                    'admin' => TRUE
+                )
+        );
+        Router::connect(ADMIN_ALIAS . '/login',
+                array(
+                    'controller' => 'homes',
+                    'action' => 'login',
+                    'admin' => TRUE
+                )
+        );
+        Router::connect(ADMIN_ALIAS . '/logout',
+                array(
+                    'controller' => 'homes',
+                    'action'    => 'logout',
+                    'admin' => TRUE
+                )
+        );
+        Router::connect(ADMIN_ALIAS . '/website-configuration',
+                array(
+                    'controller' => 'configs',
+                    'action' => 'index',
+                    'admin' => TRUE
+                )
+        );
+        Router::connect(ADMIN_ALIAS . '/website-configuration/update',
+                array(
+                    'controller' => 'configs',
+                    'action' => 'update',
+                    'admin' => TRUE
+                )
+        );
 /**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
