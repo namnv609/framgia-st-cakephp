@@ -7,7 +7,16 @@ class HomesController extends AppController {
         $this->loadModel('Layout');
         
         $listNewsIDs = unserialize($this->__staticSiteConfigs['siteSlide']);
-        $this->set('__homeSlide', $this->Layout->getNewsSlide($listNewsIDs));
+        $this->set(
+            array(
+                '__homeSlide',
+                'listNewNews'
+            ),
+            array(
+                $this->Layout->getNewsSlide($listNewsIDs),
+                $this->Home->getNewNews()
+            )
+        );
     }
     
     

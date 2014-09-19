@@ -22,14 +22,15 @@ class My_Lib{
      * Tạo thông báo lỗi ở form
      * 
      * @param mixed $validationErrs Mảng lỗi
+     * @param string $class Class thẻ sẽ chứa thông báo
      * @return string HTML thông báo lỗi
      */
-    public static function formErrorSummary($validationErrs = NULL){
+    public static function formErrorSummary($validationErrs = NULL, $class = "n_error"){
         $html = "";
         
         if(is_array($validationErrs) && !empty($validationErrs)){
             $_validationErrs = Set::flatten($validationErrs);
-            $html .= '<div class="n_error">';
+            $html .= '<div class="'. $class .'">';
             
             foreach($_validationErrs as $err){
                 $html .= "<p>$err</p>";

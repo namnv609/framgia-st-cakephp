@@ -41,12 +41,12 @@
 
                         </ul>
 
-                        <div class="pagination-wrapper">
+                        <!--<div class="pagination-wrapper">
                             <a class="selected" href="#">1</a>
                             <a href="#">2</a>
                             <a href="#">3</a>
                             <a href="#">></a>
-                        </div>
+                        </div>-->
 
                         <!-- END .page-content -->
                     </div>

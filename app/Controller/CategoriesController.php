@@ -93,7 +93,14 @@ class CategoriesController extends AppController {
         $flashMessage = $this->Session->read('Message.categoryFlashMessage.message');
         $validationErrs = NULL;
         
-        $this->Session->delete(Message.categoryFlashMessage.message);
+        $this->Session->delete('Message.categoryFlashMessage.message');
+        
+        if($flashMessage != NULL && !empty($flashMessage)){
+            $validationErrs = $flashMessage;
+            $cateID = $this->Session->read('Message.cateIDFlashMessage.message');
+            
+            $this->Session->delete('Message.cateIDFlashMessage.message');
+        }
         
         $cateData = $this->Category->find("first", array(
             'conditions' => array(
@@ -116,17 +123,62 @@ class CategoriesController extends AppController {
         $this->set(
             array(
                 'title_for_layout',
-                'cateData'
+                'cateData',
+                'validationErrs'
             ),
             array(
                 $title_for_layout,
-                $cateData
+                $cateData,
+                $validationErrs
             )
         );
     }
     
     public function admin_save(){
+        $validationErrs = NULL;
+        $cateID = 0;
         
+        if($this->request->is('post')){
+            $formPost = $this->request->data;
+            $this->Category->set($formPost);
+            $cateID = $formPost["txtCateID"];
+            
+            //pr($formPost);
+            
+            if($this->Category->validates()){
+                $this->Session->setFlash("Save category successfull.", NULL);
+                
+                if($cateID <= 0){
+                    $insertData = array(
+                        "Category" => array(
+                            "cateName" => $formPost["txtCateName"],
+                            "cateStatus" => (int) $formPost["slbCateStatus"]
+                        )
+                    );
+                    
+                    $this->Category->save($insertData);
+                }else{
+                    $this->Category->updateAll(
+                        array(
+                            'cateName' => "'".$formPost["txtCateName"]."'",
+                            'cateStatus' => (int) $formPost["slbCateStatus"]
+                        ),
+                        array(
+                            'cateID' => (int) $formPost["txtCateID"]
+                        )
+                    );
+                    $this->redirect(SITE_URL . ADMIN_ALIAS . '/edit-category-' . $cateID);
+                }              
+            }else{
+                $validationErrs = $this->Category->validationErrors;
+            }
+        }else{
+            $this->redirect(SITE_URL . ADMIN_ALIAS . '/categories');
+        }
+        
+        $this->Session->setFlash($validationErrs, NULL, NULL, 'categoryFlashMessage');
+        $this->Session->setFlash($cateID, NULL, NULL, 'cateIDFlashMessage');
+        $this->setAction('admin_edit');
     }
 }
 

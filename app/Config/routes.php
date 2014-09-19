@@ -62,6 +62,17 @@
                 'pass'  => array('cateID')
             )
         );
+        Router::connect('/news:cateID',
+            array(
+                'controller' => 'news',
+                'action' => 'index',
+                'cateID' => 0
+            ),
+            array(
+                'pass' => array('cateID'),
+                'cateID' => '[0-9]+'
+            )
+        );
         
 /**
  * Routing for back-end
@@ -136,7 +147,45 @@
         Router::connect(ADMIN_ALIAS . '/category/save',
             array(
                 'controller' => 'categories',
-                'action' => 'update',
+                'action' => 'save',
+                'admin' => TRUE
+            )
+        );
+        Router::connect(ADMIN_ALIAS . '/news',
+            array(
+                'controller' => 'news',
+                'action' => 'index',
+                'admin' => TRUE
+            )
+        );
+        Router::connect(ADMIN_ALIAS . '/add-new-news:newsID',
+            array(
+                'controller' => 'news',
+                'action' => 'edit',
+                'admin' => TRUE,
+                'newsID' => 0
+            ),
+            array(
+                'pass' => array('newsID'),
+                'newsID' => '[0-9]+'
+            )
+        );
+        Router::connect(ADMIN_ALIAS . '/edit-news-:newsID',
+            array(
+                'controller' => 'news',
+                'action' => 'edit',
+                'admin' => TRUE,
+                'newsID' => 0
+            ),
+            array(
+                'pass' => array('newsID'),
+                'newsID' => '[0-9]+'
+            )
+        );
+        Router::connect(ADMIN_ALIAS . '/news/save',
+            array(
+                'controller' => 'news',
+                'action' => 'save',
                 'admin' => TRUE
             )
         );

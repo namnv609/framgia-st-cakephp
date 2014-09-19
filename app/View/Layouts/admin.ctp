@@ -54,30 +54,15 @@
                         <li class="upp"><a href="#">Main control</a>
                             <ul>
                                 <li>&#8250; <a href="<?php echo SITE_DIR; ?>" target="_blank">Visit site</a></li>
-                                <li>&#8250; <a href="">Reports</a></li>
-                                <li>&#8250; <a href="">Add new page</a></li>
-                                <li>&#8250; <a href="">Site config</a></li>
+                                <li>&#8250; <a href="<?php echo SITE_DIR . ADMIN_ALIAS . '/website-configuration'; ?>">Site config</a></li>
                             </ul>
                         </li>
                         <li class="upp"><a href="#">Manage content</a>
                             <ul>
-                                <li>&#8250; <a href="">Show all pages</a></li>
-                                <li>&#8250; <a href="">Add new page</a></li>
-                                <li>&#8250; <a href="">Add new gallery</a></li>
-                                <li>&#8250; <a href="">Categories</a></li>
-                            </ul>
-                        </li>
-                        <li class="upp"><a href="#">Users</a>
-                            <ul>
-                                <li>&#8250; <a href="">Show all uses</a></li>
-                                <li>&#8250; <a href="">Add new user</a></li>
-                                <li>&#8250; <a href="">Lock users</a></li>
-                            </ul>
-                        </li>
-                        <li class="upp"><a href="#">Settings</a>
-                            <ul>
-                                <li>&#8250; <a href="">Site configuration</a></li>
-                                <li>&#8250; <a href="">Contact Form</a></li>
+                                <li>&#8250; <a href="<?php echo SITE_DIR . ADMIN_ALIAS . '/categories'; ?>">Show all Categories</a></li>
+                                <li>&#8250; <a href="<?php echo SITE_DIR . ADMIN_ALIAS . '/add-category'; ?>">Add new Category</a></li>
+                                <li>&#8250; <a href="<?php echo SITE_DIR . ADMIN_ALIAS; ?>/news">Show all News</a></li>
+                                <li>&#8250; <a href="<?php echo SITE_DIR . ADMIN_ALIAS; ?>/add-new-news">Add new News</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -89,8 +74,9 @@
                     <div class="box">
                         <div class="h_title">&#8250; Main control</div>
                         <ul id="home">
-                            <li class="b1"><a class="icon view_page" href="<?php echo SITE_DIR; ?>" target="_blank">Visit site</a></li>
-                            <li class="b2"><a class="icon config" href="<?php echo SITE_DIR . ADMIN_ALIAS . '/website-configuration'; ?>">Site config</a></li>
+                            <li class="b1"><a class="icon view_page" href="<?php echo SITE_DIR . ADMIN_ALIAS; ?>">Dashboard</a></li>
+                            <li class="b2"><a class="icon view_page" href="<?php echo SITE_DIR; ?>" target="_blank">Visit site</a></li>
+                            <li class="b1"><a class="icon config" href="<?php echo SITE_DIR . ADMIN_ALIAS . '/website-configuration'; ?>">Site config</a></li>
                         </ul>
                     </div>
 
@@ -99,23 +85,8 @@
                         <ul>
                             <li class="b1"><a class="icon page" href="<?php echo SITE_DIR . ADMIN_ALIAS . '/categories'; ?>">Show all Categories</a></li>
                             <li class="b2"><a class="icon add_page" href="<?php echo SITE_DIR . ADMIN_ALIAS . '/add-category'; ?>">Add new Category</a></li>
-                            <li class="b1"><a class="icon photo" href="">Show all News</a></li>
-                            <li class="b2"><a class="icon category" href="">Add new News</a></li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <div class="h_title">&#8250; Users</div>
-                        <ul>
-                            <li class="b1"><a class="icon users" href="">Show all users</a></li>
-                            <li class="b2"><a class="icon add_user" href="">Add new user</a></li>
-                            <li class="b1"><a class="icon block_users" href="">Lock users</a></li>
-                        </ul>
-                    </div>
-                    <div class="box">
-                        <div class="h_title">&#8250; Settings</div>
-                        <ul>
-                            <li class="b1"><a class="icon config" href="">Site configuration</a></li>
-                            <li class="b2"><a class="icon contact" href="">Contact Form</a></li>
+                            <li class="b1"><a class="icon photo" href="<?php echo SITE_DIR . ADMIN_ALIAS; ?>/news">Show all News</a></li>
+                            <li class="b2"><a class="icon category" href="<?php echo SITE_DIR . ADMIN_ALIAS; ?>/add-new-news">Add new News</a></li>
                         </ul>
                     </div>
                 </div>

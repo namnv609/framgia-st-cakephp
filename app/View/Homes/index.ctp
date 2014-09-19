@@ -25,180 +25,41 @@
                     </div>
                     <!-- BEGIN .clearfix -->
                     <div class="clearfix">
-                        <!-- BEGIN .news-one-half -->
-                        <div class="news-one-half">
+                        <?php
+                            if(count($listNewNews) > 0){
+                                $i = 1;
+                                $isLast = "";
+                                
+                                foreach($listNewNews AS $newNews):
+                                    $newsLink = SITE_DIR . My_Lib::titleToUrl($newNews['Home']['newsTitle'] . '-' . $newNews["Home"]["newsID"], $newNews['Cate']['cateName'] . '/', '.html');
+                                    $cateName = SITE_DIR . Inflector::slug(strtolower($newNews["Cate"]["cateName"]) . '-' . $newNews["Home"]["cateID"], '-');
+                                    if($i % 2 === 0){
+                                        $isLast = "-last";
+                                    }else{
+                                        $isLast = "";
+                                    }
+                        ?>
+                        <div class="news-one-half<?php echo $isLast; ?>">
                             <!-- BEGIN .news-image-container -->
                             <div class="news-image-container">
-                                <a href="#"><img src="img/image6.jpg" alt="" /></a>
-                                <a href="#" class="news-image-title">Food &amp; Drink</a>
+                                <a href="<?php echo $newsLink; ?>">
+                                    <img src="<?php echo IMG_RESIZER . 'http://' . $_SERVER["HTTP_HOST"] . $newNews["Home"]["newsImage"]; ?>&amp;w=319&amp;h=213" alt="" />
+                                </a>
+                                <a href="<?php echo $cateName; ?>" class="news-image-title"><?php echo $newNews["Cate"]["cateName"]; ?></a>
                             </div>
                             <!-- END .news-image-container -->
-                            <h3 class="news-title"><a href="#">Thai Cafe in brixton</a><span>November 12th, 2012</span></h3>
-                            <p>Vestibulum a magna in eros pellentesque imperdiet ut in leo cras lacus arcu</p>
+                            <h3 class="news-title">
+                                <a href="<?php echo $newsLink; ?>">
+                                    <?php echo String::truncate($newNews["Home"]["newsTitle"], 22, array('ellipsis' => '...', 'exact' => FALSE)); ?>
+                                </a>
+                                <span><?php echo date("F j, Y", strtotime($newNews["Home"]["newsPublished"])); ?></span>
+                            </h3>
+                            <p><?php echo $newNews["Home"]["newsDesc"]; ?></p>
                         </div>
-                        <!-- END .news-one-half -->
-                        <!-- BEGIN .news-one-half-last -->
-                        <div class="news-one-half-last">
-                            <!-- BEGIN .news-image-container -->
-                            <div class="news-image-container">
-                                <a href="#"><img src="img/image7.jpg" alt="" /></a>
-                                <a href="#" class="news-image-title">Fashion</a>
-                            </div>
-                            <!-- END .news-image-container -->
-                            <h3 class="news-title"><a href="#">Calming Summer Vibes</a><span>November 1st, 2012</span></h3>
-                            <p>Vestibulum a magna in eros pellentesque imperdiet ut in leo cras lacus arcu</p>
-                        </div>
-                        <!-- END .news-one-half-last -->
+                        <?php
+                                    $i++;
+                                endforeach;
+                            }
+                        ?>
                     </div>
                     <!-- END .clearfix -->
-                    <div class="title-block">
-                        <h3>Style</h3>
-                    </div>
-                    <!-- BEGIN .news-block-columns-5 -->
-                    <ul class="news-block-columns-5 clearfix">
-                        <li class="news-block-col-5">
-                            <div class="news-image-container">
-                                <a href="#"><img src="img/image8.jpg" alt="" /></a>
-                            </div>
-                            <h3 class="news-title-lower"><a href="#">Key Winter Fashion Trends</a><span>October 23rd, 2012</span></h3>
-                        </li>
-                        <li class="news-block-col-5">
-                            <div class="news-image-container">
-                                <a href="#"><img src="img/image9.jpg" alt="" /></a>
-                            </div>
-                            <h3 class="news-title-lower"><a href="#">The Skin Care Guide</a><span>October 20th, 2012</span></h3>
-                        </li>
-                        <li class="news-block-col-5">
-                            <div class="news-image-container">
-                                <a href="#"><img src="img/image10.jpg" alt="" /></a>
-                            </div>
-                            <h3 class="news-title-lower"><a href="#">100% Natural Ingredients</a><span>October 8th, 2012</span></h3>
-                        </li>
-                        <li class="news-block-col-5">
-                            <div class="news-image-container">
-                                <a href="#"><img src="img/image11.jpg" alt="" /></a>
-                            </div>
-                            <h3 class="news-title-lower"><a href="#">Our Fashion Wish List</a><span>October 1st, 2012</span></h3>
-                        </li>
-                        <li class="news-block-col-5">
-                            <div class="news-image-container">
-                                <a href="#"><img src="img/image12.jpg" alt="" /></a>
-                            </div>
-                            <h3 class="news-title-lower"><a href="#">Style Highlights for 2013</a><span>September 23rd, 2012</span></h3>
-                        </li>
-                    </ul>
-                    <!-- END .news-block-columns-5 -->
-                    <!-- BEGIN .shop-block-columns-2 -->
-                    <ul class="shop-block-columns-2 clearfix">
-                        <li class="shop-block-col-2">
-                            <div class="title-block">
-                                <h3>Culture</h3>
-                            </div>
-                            <!-- BEGIN .slider-news -->
-                            <div class="slider-news clearfix">
-                                <ul class="slides">
-                                    <li>
-                                        <ul class="shop-block-list">
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image13.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image14.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image15.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="shop-block-list">
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image14.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image15.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image13.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <!-- END .slider -->
-                            </div>
-                        </li>
-                        <li class="shop-block-col-2">
-                            <div class="title-block">
-                                <h3>Dining</h3>
-                            </div>
-                            <!-- BEGIN .slider-news -->
-                            <div class="slider-news clearfix">
-                                <ul class="slides">
-                                    <li>
-                                        <ul class="shop-block-list">
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image16.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image17.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image18.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <ul class="shop-block-list">
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image18.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image16.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                            <li class="clearfix">
-                                                <div class="shop-block-img-wrapper">
-                                                    <a href="#"><img src="img/image17.jpg" alt="" /></a>
-                                                </div>
-                                                <h4><a href="#">Mauris Rutrum Euismod Nibhat Porta Metus</a><span>November 18th, 2012</span></h4>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <!-- END .slider-news -->
-                            </div>
-                        </li>
-                    </ul>
-                    <!-- END .shop-block-columns-2 -->

@@ -41,7 +41,7 @@
             <?php
                     endforeach;
                 }else{
-                    
+                    echo "<tr><td colspan='4'>No category available here.</td></tr>";
                 }
             ?>
         </tbody>
