@@ -54,7 +54,7 @@
                 Select
             </button>
             <br /><br />
-            <img src="<?php echo IMG_RESIZER . 'http://' . $_SERVER["HTTP_HOST"] . $newsData["News"]["newsImage"]; ?>&amp;w=73&amp;h=54" alt="" id="previewNewsImage" />
+            <img src="<?php echo IMG_RESIZER . $newsData["News"]["newsImage"]; ?>&amp;w=73&amp;h=54" alt="" id="previewNewsImage" />
         </div>
         <div class="element">
             <label for="newsDesc">Short description</label>

@@ -176,7 +176,7 @@
                             <li class="clearfix">
                                 <div class="lpl-img">
                                     <a href="<?php echo $_ftLink; ?>" rel="bookmark">
-                                        <img src="<?php echo IMG_RESIZER . 'http://' . $_SERVER['HTTP_HOST'] . $_ftNews["Layout"]["newsImage"]; ?>&amp;w=73&amp;h=52" alt="" />
+                                        <img src="<?php echo IMG_RESIZER . $_ftNews["Layout"]["newsImage"]; ?>&amp;w=73&amp;h=52" alt="" />
                                     </a>
                                 </div>
                                 <div class="lpl-content">

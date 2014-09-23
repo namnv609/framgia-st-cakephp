@@ -43,7 +43,7 @@
                             <!-- BEGIN .news-image-container -->
                             <div class="news-image-container">
                                 <a href="<?php echo $newsLink; ?>">
-                                    <img src="<?php echo IMG_RESIZER . 'http://' . $_SERVER["HTTP_HOST"] . $newNews["Home"]["newsImage"]; ?>&amp;w=319&amp;h=213" alt="" />
+                                    <img src="<?php echo IMG_RESIZER . $newNews["Home"]["newsImage"]; ?>&amp;w=319&amp;h=213" alt="" />
                                 </a>
                                 <a href="<?php echo $cateName; ?>" class="news-image-title"><?php echo $newNews["Cate"]["cateName"]; ?></a>
                             </div>

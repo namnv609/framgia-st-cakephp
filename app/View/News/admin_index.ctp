@@ -33,7 +33,7 @@
                 <td><?php echo $news["News"]["newsID"]; ?></td>
                 <td><?php echo $news["News"]["newsTitle"]; ?></td>
                 <td>
-                    <img src="<?php echo IMG_RESIZER . 'http://' . $_SERVER["HTTP_HOST"] . $news["News"]["newsImage"]; ?>&amp;w=73&amp;h=52" alt="" />
+                    <img src="<?php echo IMG_RESIZER . $news["News"]["newsImage"]; ?>&amp;w=73&amp;h=52" alt="" />
                 </td>
                 <td><?php echo date("m/d/Y H:i", strtotime($news["News"]["newsPublished"])); ?></td>
                 <td><?php echo $newsFeatured[$news["News"]["newsFeatured"]]; ?></td>

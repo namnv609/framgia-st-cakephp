@@ -18018,3 +18018,30 @@ Stack Trace:
 #11 /var/www/firstapp/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomesController), Object(CakeRequest))
 #12 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #13 {main}
+2014-09-22 08:45:18 Error: [MissingControllerException] Controller class Favicon.htmlController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.htmlController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp/favicon.html
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-22 08:56:59 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/firstapp/timthumb.php?src=%2Ffirstapp%2Fapp%2Fwebroot%2Fupload%2Fimages%2Fnews%2Fslide1.jpg&amp%3Bw=73&amp%3Bh=54
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-09-22 08:57:04 Error: [MissingControllerException] Controller class AdmincpController could not be found.
+Exception Attributes: array (
+  'class' => 'AdmincpController',
+  'plugin' => NULL,
+)
+Request URL: /firstapp//admincp/firstapp/timthumb.php?src=%2Ffirstapp%2Fapp%2Fwebroot%2Fupload%2Fimages%2Fnews%2Fslide4.jpg&amp%3Bw=73&amp%3Bh=54
+Stack Trace:
+#0 /var/www/firstapp/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
